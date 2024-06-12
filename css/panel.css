@@ -1,0 +1,215 @@
+
+.ponel-navig {
+  width: 100%;
+
+  position: absolute;
+  background: white;
+
+  z-index: 2;
+  top: 130px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Class for visible state */
+.ponel-navig.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.panel-men {
+  width: 100%;
+
+  position: absolute;
+  background: white;
+  
+  z-index: 30;
+  top: 130px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Класс для видимого состояния */
+.panel-men.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.panel-kids{
+  width: 100%;
+
+  position: absolute;
+  background: white;
+
+  z-index: 30;
+  top: 130px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.panel-kids.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.panel-women {
+  width: 100%;
+
+  position: absolute;
+  background: white;
+
+  z-index: 30;
+  top: 130px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Класс для видимого состояния */
+.panel-women.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.panel-jordan{
+  width: 100%;
+
+  position: absolute;
+  background: white;
+  
+  z-index: 30;
+  top: 130px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.panel-jordan.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.panel-sale{
+  width: 100%;
+
+  position: absolute;
+  background: white;
+
+  z-index: 30;
+  top: 120px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.panel-sale.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.cotolog-men{
+  height: 650px;
+  width: 250px;
+
+  flex-direction: column;
+  justify-content:start;
+  display: flex ;
+  
+}
+.cotolog-sale{
+  height: 350px;
+  width: 250px;
+
+  flex-direction: column;
+  justify-content:start;
+  display: flex ;
+  
+}
+
+
+.cotolog-new-featured{
+  height: 400px;
+  width: 250px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content:start;
+  display: flex ;
+  
+}
+
+.cotolog-big-text{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  margin-top: 50px;
+
+  
+}
+.cotolog-litle-text{
+  color: gray;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+.cotolog-litle-text:hover{
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 844px) {
+  .ponel-navig{
+   display: none; 
+  }
+  .panel-jordan{
+    display: none;
+  }
+  .panel-kids{
+    display: none;
+  }
+  .panel-men{
+    display: none;
+  }
+  .panel-women{
+    display: none;
+  }
+  .panel-sale{
+    display: none;
+  }
+}
+

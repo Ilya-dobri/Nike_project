@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login and password</title>
+    <link rel="stylesheet" href="css/Style.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+  </head>
+  <body>
+    <a href="market.html" class="store"><i class='bx bxs-log-out-circle '></i></a>
+    <div class="wrapper">
+      <form action="" id="123">
+        <h1>login</h1>
+        <div class="input-box">
+          <input type="text" id="Username" name="login" required />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="password" name="password" required />
+
+          <i class="bx bx-hide" id="eye"></i>
+        </div>
+        <div class="remember">
+          <label for=""><input type="checkbox" />remember me</label>
+          <a href="#">Forgot password</a>
+        </div>
+
+        <button type="submit" class="btn">login</button>
+
+        <div class="register-link">
+          <p>Dont have an account <a href="#"> Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="help_click">
+      <div class="click">
+        <i class="bx bxl-telegram"></i>
+      </div>
+      <div class="panel">
+        >
+        <div class="nav_panel">
+          <div class="hight_pon">
+            <i class="bx bx-left-arrow-alt z"></i>
+            <i class="bx bx-x x"></i>
+            <i class="bx bx-dots-vertical-rounded y"></i>
+            <img
+              class="img"
+              src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/a/q/o/large-a0103-jujutsu-kaisen-anime-satoru-gojo-poster-12-x-18-inch-original-imagjybkzuxz6m7e.jpeg?q=20&crop=false"
+              alt=""
+            />
+            <p>Илья</p>
+          </div>
+          <div class="chat">
+            <div class="send">
+              <input type="text" id="Username" name="login" required />
+              <i class="bx bx-send send_click"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("123")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const formData = new FormData(this);
+          const login = formData.get("login");
+          const password = formData.get("password");
+
+          alert(login + "\n" + password);
+        });
+
+      const eye = document.getElementById("eye");
+      const input = document.getElementById("password");
+
+      eye.onclick = function () {
+        if (input.getAttribute("type") === "password") {
+          input.setAttribute("type", "text");
+          eye.classList.remove("bx-show");
+          eye.classList.add("bx-hide");
+        } else {
+          input.setAttribute("type", "password");
+          eye.classList.remove("bx-hide");
+          eye.classList.add("bx-show");
+        }
+
+        this.classList.toggle("bx-show");
+        this.classList.toggle("bx-hide");
+      };
+      const clickButton = document.querySelector(".click");
+      const navPanel = document.querySelector(".nav_panel");
+      const closeButton = document.querySelector(".x");
+
+      clickButton.addEventListener("click", function () {
+        navPanel.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", function () {
+        navPanel.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

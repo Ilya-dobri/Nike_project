@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://celes.club/uploads/posts/2022-06/1654372147_3-celes-club-p-nait-siti-kiberpank-oboi-krasivie-4.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.store{
+  position: absolute;
+  font-size: 40px;
+  left: 10px;
+  top: 0;
+  color: black;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remeber label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.remember a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember a:hover {
+  text-decoration: underline;
+}
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-size: 600;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+.help_click {
+  position: fixed;
+  z-index: 2;
+  right: 0%;
+  width: 400px;
+  height: 100%;
+}
+.nav_panel {
+  position: fixed;
+  right: -300px; /* Скрытая позиция */
+  top: 56%;
+  transform: translateY(-50%);
+  background-color: floralwhite;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+  transition: right 0.3s ease; /* Анимация смещения */
+}
+
+.nav_panel.active {
+  right: 30px; /* Показать панель */
+}
+
+.click {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px;
+  background: rgb(99, 102, 99);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease; /* Анимация смещения */
+  transition: 0.3s;
+  font-size: 40px;
+  cursor: pointer;
+}
+.click:hover {
+  transform: scale(1.1);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 0 40px hsl(10, 5%, 46%);
+}
+.click.active {
+  right: 120px; /* Сместить кнопку */
+}
+.x {
+  font-size: 35px;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.x:hover{
+    background: #b1b0b0be; 
+    border-radius: 70px; 
+}
+.y{
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 13px;
+  cursor: pointer;
+  transition: .3s;
+}
+.y:hover{
+  background: #b1b0b0be; 
+  border-radius: 70px; 
+}
+.hight_pon {
+  box-shadow: 0 0 3px 0;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.panel {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.chat {
+  position: relative;
+  height: 71px;
+  width: 100%;
+  background: rgba(187, 187, 187, 0.651);
+  top: 68%;
+  left: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  text-align: center;
+}
+.chat .send input {
+  width: calc(100% - 50px); /* Ширина поля ввода с учетом отступов */
+  height: 40px; /* Высота поля ввода */
+
+  border: none; /* Убираем границы */
+  outline: none; /* Убираем контур фокуса */
+  border-radius: 20px; /* Скругление углов */
+  font-size: 16px; /* Размер шрифта */
+  background-color: rgb(255, 255, 255); /* Прозрачный фон */
+  color: #000000; /* Цвет текста */
+  caret-color: #000000; /* Цвет маркера ввода */
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.send_click {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  width: 30px;
+  height: 24px;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.send_click:hover {
+  background: rgba(255, 255, 255, 0.63);
+}
+
+.z {
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  cursor: pointer;
+}
+

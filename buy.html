@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/buy.css">
+
+  <link rel="stylesheet" href="css/panel.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <title>buy</title>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="back"><a href="market.html" style="color: black;"><i class='bx bx-log-out'></i></a></div>
+  <div class="head2">
+    <div class="left-head2">
+      <a href="glavnaa.html"><svg height="30px" width="30px" fill="#111" viewBox="0 0 26 32"><path d="M14.4 5.52v-.08q0-.56.36-1t.92-.44 1 .36.48.96-.36 1-.96.4l-.24.08.08.12-.08.44-.16 1.28q.08.08.08.16l-.16.8q-.08.16-.16.24l-.08.32q-.16.64-.28 1.04t-.2.64V12q-.08.4-.12.64t-.28.8q-.16.32 0 1.04l.08.08q0 .24.2.56t.2.56q.08 1.6-.24 2.72l.16.48q.96.48.56 1.04l.4.16q.96.48 1.36.84t.8.76q.32.08.48.24l.24.08q1.68 1.12 3.36 2.72l.32.24v.08l-.08.16.24.16h.08q.24.16.32.16h.08q.08 0 .16-.08l.16-.08q.16-.16.32-.24h.32q.08 0 0 .08l-.32.16-.4.48h.56l.56.08q.24-.08.4-.16l.4-.24q.24-.08.48.16h.08q.08.08-.08.24l-.96.88q-.4.32-.72.4l-1.04.72q-.08.08-.16 0l-.24-.32-.16-.32-.2-.28-.24-.32-.2-.24-.16-.2-.32-.24q-.16 0-.32-.08l-1.04-.8q-.24 0-.56-.24-1.2-1.04-1.6-1.28l-.48-.32-.96-.16q-.48-.08-1.28-.48l-.64-.32q-.64-.32-.88-.32l-.32-.16q-.32-.08-.48-.16l-.16-.16q-.16 0-.32.08l-1.6.8-2 .88q-.8.64-1.52 1.04l-.88.4-1.36.96q-.16.16-.32 0l-.16.16q-.24.08-.32.08l-.32.16v.16h-.16l-.16.24q-.16.32-.32.36t-.2.12-.08.12l-.16.16-.24.16-.36-.04-.48.08-.32.08q-.4.08-.64-.12t-.4-.6q-.16-.24.16-.4l.08-.08q.08-.08.24-.08h.48L1.6 26l.32-.08q0-.16.08-.24.08-.08.24-.08v-.08q-.08-.16-.08-.32-.08-.16-.04-.24t.08-.08h.04l.08.24q.08.4.24.24l.08-.16q.08-.16.24-.16l.16.16.16-.16-.08-.08q0-.08.08-.08l.32-.32q.4-.48.96-.88 1.12-.88 2.4-1.36.4-.4.88-.4.32-.56.96-1.2.56-.4.8-.56.16-.32.4-.32H10l.16-.16q.16-.08.24-.16v-.4q0-.4.08-.64t.4-.24l.32-.32q-.16-.32-.16-.72h-.08q-.16-.24-.16-.48-.24-.4-.32-.64h-.24q-.08.24-.4.32l-.08.16q-.32.56-.56.84t-.88.68q-.4.4-.56.88-.08.24 0 .48l-.08.16h.08q0 .16.08.16h.08q.16.08.16.2t-.24.08-.36-.16-.2-.12l-.24.24q-.16.24-.32.2t-.08-.12l.08-.08q.08-.16 0-.16l-.64.16q-.08.08-.2 0t.04-.16l.4-.16q0-.08-.08-.08-.32.16-.64.08l-.4-.08-.08-.08q0-.08.08-.08.32.08.8-.08l.56-.24.64-.72.08-.16q.32-.64.68-1.16t.76-.84l.08-.32q.16-.32.32-.56t.4-.64l.24-.32q.32-.48.72-.48l.24-.24q.08-.08.08-.24l.16-.16-.08-.08q-.48-.4-.48-.72-.08-.56.36-.96t.88-.36.68.28l.16.16q.08 0 .08.08l.32.16v.24q.16.16.16.24.16-.24.48-.56l.4-1.28q0-.32.16-.64l.16-.24v-.16l.24-.96h.16l.24-.96q.08-.24 0-.56l-.32-.8z"></path></svg></a>
+      <a href="glavnaa.html"><svg height="30px" width="30px" fill="#111" viewBox="0 0 39 33"><path d="M10.94 25.626l-4.236-5.501L.201 22.28l3.734-5.756L.11 10.777l6.59 2.031 4.026-5.474.14 6.785 6.64 2.175-6.594 2.446.028 6.886zm.824 7.239l13.952-16.393L11.806.107h11.697l14.871 16.389-14.8 16.369h-11.81z"></path></svg></a>
+    </div>
+    <div class="right-head2">
+      <h4 style="cursor: pointer;">Find a Store</h4>
+      <div class="slider-w"></div>
+      <h4 style="cursor: pointer;">Help</h4>
+      <div class="slider-w"></div>
+      <h4 style="cursor: pointer;">Join Us</h4>
+      <div class="slider-w"></div>
+      <h4 style="cursor: pointer;">Sign In</h4>
+    </div>
+  </div>  
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="glavnaa.html"><svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="100px" height="100px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg></a>
+      </div>
+      <div class="header-center">
+         <h3 id="new-featured">New & Featured</h3>
+        <h3 id="men">Men</h3>
+        <h3 id="women">Women</h3>
+        <h3 id="kids">Kids</h3>
+        <h3 id="jordan">Jordan</h3>
+        <h3 id="sale">Sale</h3>
+      </div>
+      <div class="header-right">
+        
+        <div class=""><input type="search" class="textinput" placeholder="Поиск"></div>
+        <div class="text"><h3><a href="../../html__css/моя_робота/пароль и логин/index.html" style="color: black;">Register</a></h3></div>
+      </div>
+      
+    </nav>
+    
+  </header>
+  <div id="panel-new-featured" class="ponel-navig">
+    <div class="cotolog-new-featured">
+      <a href="market.html"><h3 class="cotolog-big-text">Nike Summer Event</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shop the Collection</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Extra 25% Off Select Styles</h3></a>
+    </div>
+    <div class="cotolog-new-featured">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">New Arrivals</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Best Sellers</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">New & Upcoming Drops</h3></a>
+    </div>
+    <div class="cotolog-new-featured">
+      <a href="market.html"><h3 class="cotolog-big-text">Trending</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">ACG</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">The Color Shop</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shop Sport</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Father's Day Shop</h3></a>
+    </div>
+    <div class="cotolog-new-featured">
+      <a href="market.html"><h3 class="cotolog-big-text">Shop Classics</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Dunk</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Jordan 1</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text"> Air Force</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Max</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Blazer</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Vomero</h3></a>
+
+    </div>
+    <div class="cotolog-new-featured">
+      <a href="market.html"><h3 class="cotolog-big-text">Shop Classics</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">SNKRS Launch Calendar</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Running Shoe Finder</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Bra Finder</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Product Care</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Member Rewards</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Buying Guides</h3></a>
+    </div>
+  </div>
+  <div id="panel-men" class="panel-men">
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Nike Summer Event</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shop the Collection</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Extra 25% Off Select Styles</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">New Arrivals</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Best Sellers</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Sale</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">MLB City Connect</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Underwear and More</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">ACG Essentials</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike Life</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Shoes</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Dunk</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Max</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Force 1</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Training & Gym</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Basketball</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike SB</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Sandals & Slides</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike by You</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shoes $100 & Under</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Clothing</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hoodies & Sweatshirts </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shorts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Pants & Tights</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jackets & Vests</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Tops & T-Shirts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Matching Sets</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Big & Tall </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan </h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">Accessories</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Accessories </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Bags & Backpacks </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hats & Headwear </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Socks </h3></a>
+    </div>
+    <div class="cotolog-men">
+     <a href="market.html"><h3 class="cotolog-big-text">Shop by Sport</h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Basketball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Running </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Golf </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Soccer </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Training & Gym </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Tennis </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Baseball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Football </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Trail Running </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Swimming </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Pickleball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Fan Gear </h3></a>
+
+    </div>
+  </div>
+  <div id="panel-women" class="panel-women">
+    <div class="cotolog-men">
+      <h3 class="cotolog-big-text">Nike Summer Event</h3>
+      <h3 class="cotolog-litle-text">Shop the Collection</h3>
+      <h3 class="cotolog-litle-text">Extra 25% Off Select Styles</h3>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">New Arrivals</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Best Sellers</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Sale</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">MLB City Connect</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Underwear and More</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">ACG Essentials</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike Life</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Shoes</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Dunk</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Max</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Force 1</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Training & Gym</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Basketball</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike SB</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Sandals & Slides</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike by You</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shoes $100 & Under</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Clothing</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hoodies & Sweatshirts </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shorts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Pants & Tights</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jackets & Vests</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Tops & T-Shirts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Matching Sets</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Big & Tall </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan </h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">Accessories</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Accessories </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Bags & Backpacks </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hats & Headwear </h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Socks </h3></a>
+    </div>
+    <div class="cotolog-men">
+     <a href="market.html"><h3 class="cotolog-big-text">Shop by Sport</h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Basketball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Running </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Golf </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Soccer </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Training & Gym </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Tennis </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Baseball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Football </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Trail Running </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Swimming </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Pickleball </h3></a>
+     <a href="market.html"><h3 class="cotolog-litle-text">Fan Gear </h3></a>
+
+    </div>
+  </div>
+  <div id="panel-kids" class="panel-kids">
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Nike Summer Event</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shop the Collection</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Extra 25% Off Select Styles</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">New Arrivals</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Best Sellers</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Sale</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">Collections</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">EasyOn</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Teen Essentials</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Summer Fleece</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Big Kids (1Y - 7Y)</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Little Kids (8C - 3Y)</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Baby & Toddler (1C - 10C)</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">All Shoes</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Lifestyle</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Dunk</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Air Force 1</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Basketball</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Nike SB</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Sandals & Slides</h3></a>
+
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Clothing by Size</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Big Kids (XS - XL)</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Little Kids (4 - 7)</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Baby & Toddler (0M - 4T)</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Extended Sizing</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">All Clothing</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hoodies & Sweatshirts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Shorts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Pants & Tights</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jackets & Vests</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Tops & T-Shirts</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Skirts & Dresses</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Bras</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Matching Sets</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Jordan</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href="market.html"><h3 class="cotolog-big-text">Accessories</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">All Accessories</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Bags & Backpacks</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Hats & Headwear</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Socks</h3></a>
+      <a href="market.html"><h3 class="cotolog-big-text">Shop by Sport</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Basketball</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Running</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Golf</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Soccer</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Baseball</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Football</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Tennis</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Dance</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Swimming</h3></a>
+      <a href="market.html"><h3 class="cotolog-litle-text">Fan Gear</h3></a>
+    </div>
+    
+  </div>
+  <div id="panel-jordan" class="panel-jordan">
+    <div class="cotolog-men">
+      <a href=""><h3 class="cotolog-big-text">New & Featured</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">New Arrivals</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Best Sellers</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">All Sale</h3></a>
+      <a href=""><h3 class="cotolog-big-text">Collections</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Heat Check</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Trending Colors</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Golf Essentials</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Girls Lemonade Stand</h3></a>
+    </div>
+
+    <div class="cotolog-men">
+      <a href=""><h3 class="cotolog-big-text">Men</h3></a>
+      <a href=""><h3 class="cotolog-litle-text"> Shop All</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">AJ1</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Basketball</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href=""><h3 class="cotolog-big-text">Women</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">AJ1</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Basketball</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href=""><h3 class="cotolog-big-text">Women</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">AJ1</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Basketball</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Big Kids</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Little Kids</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Little Kids</h3></a>
+    </div>
+    <div class="cotolog-men">
+      <a href=""><h3 class="cotolog-big-text">Women</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Bags & Backpacks</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Hats & Headwear</h3></a>
+    </div>
+  </div>
+  <div id="panel-sale" class="panel-sale">
+    <div class="cotolog-sale">
+      <a href=""><h3 class="cotolog-big-text">Nike Summer Event</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Extra 25% Off Select Styles</h3></a>
+    </div>
+    <div class="cotolog-sale">
+      <a href=""><h3 class="cotolog-big-text">All Sale</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Sale Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Sale Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Sale Accessories</h3></a>
+    </div>
+    <div class="cotolog-sale">
+      <a href=""><h3 class="cotolog-big-text">Men</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Accessories</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+
+    </div>
+    <div class="cotolog-sale">
+      <a href=""><h3 class="cotolog-big-text">Women</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Accessories</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+    </div>
+    <div class="cotolog-sale">
+      <a href=""><h3 class="cotolog-big-text">Kids</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shoes</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Clothing</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Accessories</h3></a>
+      <a href=""><h3 class="cotolog-litle-text">Shop All</h3></a>
+    </div>
+  </div>
+  <div class="buy-nav">
+    <div class="buy-ponel">
+      <div class="left-fh">
+        <div class="left-fh-mini">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbdd82bf-1b17-4b35-95f8-406a47dbb17a/dunk-low-womens-shoes-xjLtxN.png" alt="">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b3b669ad-f784-4c6f-84aa-a87880df836f/dunk-low-womens-shoes-xjLtxN.png" alt="">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d4b698bf-7524-483a-a83a-344859485d2d/dunk-low-womens-shoes-xjLtxN.png" alt="">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e524dea6-4110-414a-a849-4528bc671442/dunk-low-womens-shoes-xjLtxN.png" alt="">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5d8a12ad-36c5-473e-b0f5-8d8be80e3d92/dunk-low-womens-shoes-xjLtxN.png" alt="">
+        </div>
+
+        <div class="big-fhoto"></div>
+      </div>
+      <div class="menu-buy">
+        <div class="grid">
+          <div class="text-price">
+            <h2>Nike Dunk Low</h2>
+            <h3>Women's Shoes</h3>
+            <p>$115</p>
+          </div>
+          <div class="up-grid">
+            <h4>Select Size</h4>
+            <a href="https://www.nike.com/size-fit/womens-footwear"><h4 style="color: lightgray;">Size Guide</h4></a>
+          </div>
+          <div class="d">
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">5</div>
+          </div>
+          <div class="info">
+            <h4>4 interest-free payments of $28.75 with</h4>
+            <p>Klarna. <a href="">Learn More</a></p>
+          </div>
+          <div class="buttom">
+
+            <button id="number-1_bottom" class="number-1_bottom">Added to Bag</button>
+
+            <button class="number-2_bottom"><h3>Favorite <i class='bx bx-heart heart'></i></h3></button>
+          </div>
+          <div class="info-vell-text">
+            <h4>Shipping</h4>
+            <p>You'll see our shipping options at checkout</p>
+            <p class="p">Free Pickup</p>
+            <p>Find a Store</p>
+            <p class="p2">Familiar but always fresh, the iconic Air Jordan 1 is remastered for today's sneakerhead culture. This Retro High OG version goes all in with premium leather, comfortable cushioning and classic design details.</p>
+            <h3>Shown: White/Team Red</h3>
+            <h3>Style: FD1437-160</h3>
+            <p class="p3">View Product Details</p>
+
+            <button class="accordion"><h2>Section 3</h2> <i class='bx bx-down-arrow-alt click2'></i></button>
+            <div class="panel_acord">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion"><h2>Section 3</h2> <i class='bx bx-down-arrow-alt click2'></i></button>
+            <div class="panel_acord">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            
+            <button class="accordion"><h2>Section 3</h2> <i class='bx bx-down-arrow-alt click2'></i></button>
+            <div class="panel_acord">
+              <p>Lorem ipsum...</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info2">
+    <h1>How Others Are Wearing It</h1>
+    <p>Upload your photo or mention @Nike on Instagram for a chance to be featured.</p>
+    <button class="info2_click">Upload Your Photo</button>
+  </div>
+  <h1 class="left_marg">You Might Also Like</h1>
+  <div class="recomed">
+    <div class="block">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d81bda98-63f3-44fb-9436-9391c9b06807/dunk-low-big-kids-shoes-l6Jxh2.png" alt="">
+      <h2>Nike Dunk Low</h2>
+      <h2>Big Kids' Shoes</h2>
+      <h2>$90.00</h2>
+    </div>
+    <div class="block">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d81bda98-63f3-44fb-9436-9391c9b06807/dunk-low-big-kids-shoes-l6Jxh2.png" alt="">
+      <h2>Nike Dunk Low</h2>
+      <h2>Big Kids' Shoes</h2>
+      <h2>$90.00</h2>
+    </div>
+    <div class="block">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d81bda98-63f3-44fb-9436-9391c9b06807/dunk-low-big-kids-shoes-l6Jxh2.png" alt="">
+      <h2>Nike Dunk Low</h2>
+      <h2>Big Kids' Shoes</h2>
+      <h2>$90.00</h2>
+    </div>
+    <div class="block">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d81bda98-63f3-44fb-9436-9391c9b06807/dunk-low-big-kids-shoes-l6Jxh2.png" alt="">
+      <h2>Nike Dunk Low</h2>
+      <h2>Big Kids' Shoes</h2>
+      <h2>$90.00</h2>
+    </div>
+    <div class="block">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d81bda98-63f3-44fb-9436-9391c9b06807/dunk-low-big-kids-shoes-l6Jxh2.png" alt="">
+      <h2>Nike Dunk Low</h2>
+      <h2>Big Kids' Shoes</h2>
+      <h2>$90.00</h2>
+    </div>
+  </div>
+
+  <div id="panel" class="hidden-panel">
+    <div class="x"><i class="bx bx-x x"></i></div>
+    <div class="arrange">
+      <p class="p-menu"><i class='bx bxs-badge-check  bxs-badge-check-color'></i>  Added to Bag</p>
+      <div class="info-panel">
+
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbdd82bf-1b17-4b35-95f8-406a47dbb17a/dunk-low-womens-shoes-xjLtxN.png" alt="">
+        <div class="info-panel-text">
+            <h2>Nike Dunk Low</h2>
+          <h2>Women's Shoes</h2>
+          <h2>Size 10.5</h2>
+          <h2>$115</h2>
+        </div>
+        
+        
+      </div>
+
+      <div class="buttom2">
+        <button class="number-1_bottom-panel">View Bag </button>
+        <button class="number-2_bottom-panel"><h3>Checkout <i class='bx bx-heart heart'></i></h3></button>
+      </div>
+
+      
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="nav-footer">
+    <div class="futer_text">
+      <a href="#"><p class="bolt-text">RESOURCES</p></a>
+      <a href="#"><p class="bolt-text">GIFT CARDSGIFT CARDS</p></a>
+      <a href="#"><p class="bolt-text">FIND A STORE</p></a>
+      <a href="#"><p class="bolt-text">BECOME A MEMBER</p></a>
+      <a href="#"><p class="bolt-text">NIKE X NBA</p></a>
+      <a href="#"><p class="bolt-text">NIKE JOURNAL</p></a>
+      <a href="#"><p class="bolt-text">Site Feedback</p></a>
+    </div>
+    <div class="futer_text">
+      <a href="#"><p class="bolt-text">HELP</p></a>
+      <a href="#"><p class="litle-text">Get Help</p></a>
+      <a href="#"><p class="litle-text">Order Status</p></a>
+      <a href="#"><p class="litle-text">Shipping and Delivery</p></a>
+      <a href="#"><p class="litle-text">Returns</p></a>
+      <a href="#"><p class="litle-text">Order Cancellation</p></a>
+      <a href="#"><p class="litle-text">Payment Options</p></a>
+      <a href="#"><p class="litle-text">Gift Card Balance</p></a>
+      <a href="#"><p class="litle-text">Contact Us</p></a>
+    </div>
+    <div class="futer_text">
+      <a href="#"><p class="bolt-text">COMPANY</p></a>
+      <a href="#"><p class="litle-text">About Nike</p></a>
+      <a href="#"><p class="litle-text">News</p></a>
+      <a href="#"><p class="litle-text">Careers</p></a>
+      <a href="#"><p class="litle-text">Investors</p></a>
+      <a href="#"><p class="litle-text">Purpose</p></a>
+      <a href="#"><p class="litle-text">Sustainability</p></a>
+    </div>
+    <div class="futer_text">
+      <a href="#"><p class="bolt-text">PROMOTIONS & DISCOUNTS</p></a>
+      <a href="#"><p class="litle-text">Student</p></a>
+      <a href="#"><p class="litle-text">Military</p></a>
+      <a href="#"><p class="litle-text">Teacher</p></a>
+      <a href="#"><p class="litle-text">First Responders & Medical Professionals</p></a>
+      <a href="#"><p class="litle-text">Birthday </p></a>
+    </div>
+    <div class="buttom-futter">
+      <div class="logo-futer"><i class='bx bxl-twitter'></i></div>
+      <div class="logo-futer"><i class='bx bxl-facebook'></i></div>
+      <div class="logo-futer"><i class='bx bxl-youtube'></i></div>
+      <div class="logo-futer"><i class='bx bxl-instagram'></i></div>
+    </div>
+      
+    </div>
+    <div class="SubFooter">
+      <h4 class="SubFooter-text">Terms of Sale</h4>
+      <h4 class="SubFooter-text">Terms of Use</h4>
+      <h4 class="SubFooter-text">Nike Privacy Policy</h4>
+      <h4 class="SubFooter-text">Your Privacy Choices</h4>
+
+    </div>
+    <div class="full-low">
+      <div class="full-low-left">
+        <p><i class='bx bx-map'></i> United States</p>
+        <p >© 2024 Nike, Inc. All Rights Reserved</p>
+      </div>
+      <div class="full-low-rigth">
+        <a href="#"><p class="litle-text">CA Supply Chains Act </p></a>
+      </div>
+    </div>
+  </footer>
+  <script src="buy.js"></script>
+</body>
+</html>
